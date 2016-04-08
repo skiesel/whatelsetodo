@@ -1,0 +1,7 @@
+{
+	"labels" : ["TODO:", "FIX:"],
+	"fileExtensions" : [".c", ".h"],
+	"singleLineDelim" : "//",
+	"multiLineDelimStart" : "/*",
+	"multiLineDelimEnd" : "*/"
+}
