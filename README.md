@@ -2,12 +2,22 @@
 
 Simple command line utility for reading a project for tagged comments
 
+Using the following config.json file:
+
+```json
+{
+	"labels" : ["TODO:", "FIX:"],
+	"fileExtensions" : [".c", ".h"],
+	"singleLineDelim" : "//",
+	"multiLineDelimStart" : "/*",
+	"multiLineDelimEnd" : "*/"
+}
+```
+
 Sample output from running:
 
-
-
 ```
-> whatslefttodo -dir="test"
+> whatslefttodo -config="config.json" -dir="test"
 test/test1.c
 	FIX:
 		1: line 1
